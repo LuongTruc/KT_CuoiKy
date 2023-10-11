@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title - LAYOUTPAGE</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet" />
+    <link href="~/Content/MasterSheet.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        <header class="all_menu">
+            <div class="on_menu">
+                <div class="on_logo">
+                    <a href="#"><img src="~/Content/Photo/_logo_young_birds_store.png" /></a>
+                </div>
+                <div class="on_header">
+                    <input class="search" type="text" placeholder="Tìm kiếm..." />
+                    <a class="icon_glass" href="#"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></a>
+                    <button class="dieu_khoan" href="#">Điều khoảng</button>
+                    <button class="hoa_don" href="#">Đơn hàng</button>
+                    <button class="gio_hang" href="#"><i class="fa-solid fa-cart-shopping"></i> <strong>Giỏ hàng</strong></button>
+                    <a class="thong_tin" href="#">Đăng nhập <span style="padding:0 10px">|</span></a>
+                    <a class="thong_tin" href="#">Đăng ký</a>
+                </div>
+            </div>
+            <nav style="margin-top:-100px">
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-mobile-screen"></i>&ensp;Phone</a></li>
+                    <li><a href="#"><i class="fa-solid fa-tablet-screen-button"></i>&ensp; Table</a></li>
+                    <li><a href="#"><i class="fa-solid fa-laptop"></i>&ensp;Laptop</a></li>
+                    <li><a href="#"><i class="fa-solid fa-headphones"></i>&ensp;AirPods</a></li>
+                    <li><a href="#"><i class="fa-solid fa-clock"></i>&ensp;Smartwatch</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn">Phụ kiện&ensp;<i class="fa-solid fa-chevron-down"></i></button>
+                            <div class="dropdown-content">
+                                <a href="#">Sạc dự phòng</a>
+                                <a href="#">Chuột, Bàn phím</a>
+                                <a href="#">Loa, Mic</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn">Dịch vụ&ensp;<i class="fa-solid fa-chevron-down"></i></button>
+                            <div class="dropdown-content">
+                                <a href="#">Đóng tiền trả góp</a>
+                                <a href="#">Thu cũ đổi mới</a>
+                                <a href="#">Thần số học</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn">Tin tức&ensp;<i class="fa-solid fa-chevron-down"></i></button>
+                            <div class="dropdown-content">
+                                <a href="#">Góc cảm ơn</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="img_bgr"></div>
+        @RenderBody()
+        <footer>
+            <table>
+                <tr>
+                    <td width="31%">
+                        <a class="logo" href="#"><img src="~/Content/Photo/_logo_young_birds_store.png" /></a>
+                        <p>
+                            Năm 2023, Yuong - Birds - Store được thành lập, nhằm cung cấp các loại sản phẩm công nghệ của thời đại 4.0. Với mục đích mang đến trải nghiệm tốt nhất về sản phẩm và dịch vụ 4.0 cho người dùng Việt Nam.
+                        </p>
+                        <a href="#"><img src="https://shopdunk.com/Themes/SD/Content/images/Face.png" /></a>
+                        <a href="#"><img src="https://shopdunk.com/Themes/SD/Content/images/Youtube.png" /></a>
+                        <a href="#"><img src="https://shopdunk.com/Themes/SD/Content/images/Zalo.png" /></a>
+                    </td>
+                    <td width="23%">
+                        <h1 style="padding-left:40px">Thông tin</h1>
+                        <ul>
+                            <li><a href="#">Tin tức</a></li>
+                            <li><a href="#">Giới thiệu</a></li>
+                            <li><a href="#">Check IMEI</a></li>
+                            <li><a href="#">Phương thức thanh toán</a></li>
+                            <li><a href="#">Thuê điểm bán lẻ</a></li>
+                            <li><a href="#">Bảo hành và sửa chữa</a></li>
+                            <li><a href="#">Tuyển dụng</a></li>
+                            <li><a href="#">Đánh giá chất lượng, khiếu nại</a></li>
+                        </ul>
+                    </td>
+                    <td width="23%">
+                        <h1 style="padding-left:40px">Chính sách</h1>
+                        <ul>
+                            <li><a href="#">Thu cũ đổi mới</a></li>
+                            <li><a href="#">Giao hàng</a></li>
+                            <li><a href="#">Giao hàng(ZaloPay)</a></li>
+                            <li><a href="#">Hủy giao dịch</a></li>
+                            <li><a href="#">Đổi trả</a></li>
+                            <li><a href="#">Bảo hành</a></li>
+                            <li><a href="#">Dịch vụ</a></li>
+                            <li><a href="#">Giải quyết khiếu nại</a></li>
+                            <li><a href="#">Bảo mật thông tin</a></li>
+                            <li><a href="#">Hướng dẫn thanh toán qua VNPAY</a></li>
+                        </ul>
+                    </td>
+                    <td width="23%">
+                        <h1 style="padding-left:40px">Địa chỉ & Liên hệ</h1>
+                        <ul>
+                            <li><a href="#">Tài khoản của tôi</a></li>
+                            <li><a href="#">Đơn đặt hàng</a></li>
+                            <li><a href="#">Hệ thống cửa hàng</a></li>
+                            <li><a href="#">Tìm Store trên Google Map</a></li>
+                            <li><a href="#">Mua hàng: <span style="color:#06c;font-size:16px">0346.262.543</span></a></li>
+                            <li><span style="font-size: 13px; color: #86868b; padding-left: 15px; display: flex; line-height: 20px">Nhánh 1: khu vực Hà Nội và các tỉnh phía bắc</span></li>
+                            <li><span style="font-size: 13px; color: #86868b; padding-left: 15px; display: flex; line-height: 20px">Nhánh 2: khu vực Hồ Chí Minh và các tỉnh phía nam</span></li>
+                            <li><span style="font-size: 13px; color: #86868b; padding-left: 15px; display: flex; line-height: 20px">Nhanh 3: Khiếu nại và góp ý</span></li>
+                            <li><a href="#">Doanh nghiêp: <span style="color:#06c">087.926.5415</span></a></li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+            <hr style="color: #515154; font-weight:100" />
+            <table>
+                <tr>
+                    <td width="90%">
+                        <h2 style="padding-top:20px">© 2023 HCMC UNIVERSITY OF FOREIGN LANGUAGES - INFOMATION TECHNOLOGY (HUFLIT).</h2>
+                        <h2>Địa chỉ: Số 828 Sư Vạn Hạnh, phường 13, quận 10, thành phố Hồ Chí Minh, Việt Nam</h2>
+                        <h2>Đại diện pháp luật: NGUYỄN NHẤT MINH | ĐT: 0364.244.786 | Email: nhatminh122004@gmail.com</h2>
+                    </td>
+                    <td width="10%">
+                        <a class="bct" href="#"><img src="https://shopdunk.com/images/uploaded-source/Trang%20ch%E1%BB%A7/Bocongthuong.png" /></a>
+                    </td>
+                </tr>
+            </table>
+        </footer>
+    </div>
+</body>
+</html>
